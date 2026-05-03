@@ -29,7 +29,7 @@ Backend API Used
 
 The frontend connects to the backend at:
 
-http://127.0.0.1:5000/products
+http://127.0.0.1:5001/products
 
 If your backend runs on a different port, update the API URL inside script.js.
 
