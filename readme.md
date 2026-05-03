@@ -1,137 +1,46 @@
-# Web Dev Capstone with JS
+Frontend README.md
+# Frontend - Web Dev Capstone with JS
 
-A full-stack product management web application demonstrating frontend-backend integration using REST APIs. Built with **HTML, CSS, JavaScript** on the frontend and **Flask** on the backend.
+This repository contains the frontend of a full-stack product management web application built using **HTML, CSS, and JavaScript**.
 
----
+## Features
 
-## 🚀 Features
+- Home page that displays products fetched from the backend API
+- Add Product page with a form to create new products
+- Dynamic UI updates using DOM manipulation
+- API integration using the Fetch API
+- Structured and responsive layout using HTML and CSS
 
-- Home page displaying products fetched from backend API
-- Add Product page with form submission
-- REST API built using Flask:
-  - `GET /products` to retrieve all products
-  - `POST /products` to add a new product
-- In-memory data storage using Python list/dictionary
-- Basic server-side validation
-- Dynamic UI updates using DOM manipulation and Fetch API
-
----
-
-## ⚙️ How It Works
-
-- The frontend sends HTTP requests to the Flask backend using the Fetch API
-- The backend processes requests and returns JSON responses
-- The frontend dynamically updates the UI using DOM manipulation
-- Product data is stored temporarily in an in-memory data structure
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
-Web Dev Capstone with JS/
-├── frontend/
-│   ├── index.html
-│   ├── add-product.html
-│   ├── style.css
-│   ├── style2.css
-│   └── script.js
-├── backend/
-│   ├── app.py
-│   └── requirements.txt
+frontend/
+├── index.html
+├── add-product.html
+├── style.css
+├── style2.css
+├── script.js
 └── README.md
-````
+How to Run
+Make sure the backend server is running.
+Open index.html in your browser.
+Or use the Live Server extension in VS Code.
+Backend API Used
 
----
+The frontend connects to the backend at:
 
-## 📦 Requirements
+http://127.0.0.1:5000/products
 
-* Python 3.10+
-* Flask
-* flask-cors
+If your backend runs on a different port, update the API URL inside script.js.
 
----
+Notes
+The Home page shows all products from the backend.
+The Add Product page sends form data to the backend using fetch().
+Make sure the backend is running before opening the frontend.
+Backend Repository
 
-## ▶️ How to Run the Backend
+https://github.com/dhairya4951-pixel/Web-Dev-Project-with-JS-Back-End.git
 
-1. Navigate to the backend folder:
+Author
 
-```bash
-cd backend
-```
-
-2. Create and activate a virtual environment:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-For Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the server:
-
-```bash
-python app.py
-```
-
-Backend will run on:
-
-```
-http://127.0.0.1:5000
-```
-
----
-
-## 🌐 API Endpoints
-
-### GET `/products`
-
-Returns the list of all products.
-
-### POST `/products`
-
-Adds a new product.
-
-**Request Body (JSON):**
-
-```json
-{
-  "name": "Keyboard",
-  "price": 2500,
-  "category": "Electronics",
-  "description": "Mechanical keyboard",
-  "stock": 10
-}
-```
-
----
-
-## 💻 How to Run the Frontend
-
-* Open `frontend/index.html` in a browser
-  OR
-* Use a Live Server extension in VS Code
-
----
-
-## ⚠️ Important Notes
-
-* Make sure the backend server is running before opening the frontend
-* Data is stored in-memory and will reset when the server restarts
-* Ensure the navigation bar includes both **Home** and **Add Product** links
-* Update/Delete/Search features are not implemented (optional as per project guidelines)
-
----
-
-
+Dhairya
