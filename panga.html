@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Product App</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="add-product.html">Add Product</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      
+      <div class="form-cover">
+        <h1>Add New Product</h1>
+        <p style="font-weight: 550;">Fill in the details below to add a product to your inventory</p>
+      <form id="product-form">
+        <p class="head">Product Name*</p>
+        <input type="text" id="name" placeholder="Product Name" required />
+        <p class="head">Price ( ₹ )*</p>
+        <input type="number" id="price" placeholder="Price" required />
+        <p class="head">Stock Quantity*</p>
+        <input type="text" id="category" placeholder="Category" required />
+        <p class="head">Category*</p>
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <p class="head">Description*</p>
+        <input type="number" id="stock" placeholder="Stock" required />
+        <button type="submit">Add Product</button>
+      </form>
+      </div>
+    
+
+      <p id="message"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
